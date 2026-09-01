@@ -91,3 +91,36 @@ body.light-mode #theme-toggle {
     border-color: #164e63;
     color: #164e53;
 }
+
+
+
+/* Mobile view */
+@media (max-width: 600px) {
+
+    body {
+        padding: 80px 25px 100px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .introduction {
+        margin-right: 0;
+    }
+
+    .personal-details {
+        max-width: 100%;
+    }
+
+    #corner-illustration {
+        width: 120px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #theme-toggle {
+        top: 20px;
+        right: 20px;
+    }
+}

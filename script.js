@@ -25,7 +25,6 @@ toggle.addEventListener("change", function() {
 
 
 
-
 const slider = document.getElementById("info-slider");
 const infoLevel = document.getElementById("info-level");
 const aboutMe = document.getElementById("introduction");
@@ -93,7 +92,12 @@ const information = {
                 extracellular recordings.
                 I also work on building a computational model of the
                 hippocampal CA1 subregion to further understand the elements
-                of the oscillatory drive in the same mouse model.
+                of the oscillatory drive in the same mouse model. 
+            </p>
+            <p class="personal-details">
+                For more details, you can check my
+                <a href="data/CV_2026.pdf" target="_blank">CV</a>
+                
             </p>
         `
     }

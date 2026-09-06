@@ -1,0 +1,29 @@
+{
+    "1": {
+        "content": [
+            "I love to express myself through painting and/or singing along to some good music. Music and colors help me recharge and think in new ways. During my free time, I watch clouds drift by like it is some serious business, binge a good anime series, or procrastinate to plan my next travel adventure."
+        ]
+    },
+    "2": {
+        "content": [
+            "I'm fascinated by how the human brain works. I love to express myself through painting and/or singing along to some good music. Music and colors help me recharge and think in new ways."
+        ]
+    },
+    "3": {
+        "content": [
+            "I like to read about the brain while sitting by the river."
+        ]
+    },
+    "4": {
+        "content": [
+            "I completed my bachelors in Roorkee, before coming to Magdeburg to study about the brain. Currently, I work with mice and perform behavioral experiments on them. Later, I sacrifice them to collect electrical oscillations from their brain."
+        ]
+    },
+    "5": {
+        "content": [
+            "I am a neuroscientist from India, currently based in Germany. I completed my B.Tech in Biotechnology from IIT Roorkee in India before joining the MSc program in Integrative Neuroscience at OvGU, Magdeburg in Germany.",
+            "My MSc thesis project focuses on characterizing network oscillation dynamics in a GABA-deficient genetic mouse model, mainly employing in vitro electrophysiology to obtain extracellular recordings. I also work on building a computational model of the hippocampal CA1 subregion to further understand the elements of the oscillatory drive in the same mouse model."
+        ],
+        "cv": "data/CV_2026.pdf"
+    }
+}

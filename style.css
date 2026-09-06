@@ -208,12 +208,13 @@ body.light-mode .slider-labels {
 
     h2 {
         width: 100%;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .introduction {
         width: 90%;
         min-height: 350px;
+        font-size: 15px;
     }
 
     .personal-details {

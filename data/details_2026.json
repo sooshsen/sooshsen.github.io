@@ -1,29 +1,91 @@
 {
     "1": {
         "content": [
-            "I love to express myself through painting and/or singing along to some good music. Music and colors help me recharge and think in new ways. During my free time, I watch clouds drift by like it is some serious business, binge a good anime series, or procrastinate to plan my next travel adventure."
+            "Hi! I am Sushmita."
         ]
     },
     "2": {
         "content": [
-            "I'm fascinated by how the human brain works. I love to express myself through painting and/or singing along to some good music. Music and colors help me recharge and think in new ways."
+            "Hi! I am Sushmita, currently based in Germany."
         ]
     },
     "3": {
         "content": [
-            "I like to read about the brain while sitting by the river."
+            "Hi! I am Sushmita Senapati, currently based in Germany. I came here to study about the brain."
         ]
     },
     "4": {
         "content": [
-            "I completed my bachelors in Roorkee, before coming to Magdeburg to study about the brain. Currently, I work with mice and perform behavioral experiments on them. Later, I sacrifice them to collect electrical oscillations from their brain."
+            "Hi! I am Sushmita Senapati, currently based in Germany, originally from India. I came here to pursue master's studies in neuroscience."
         ]
     },
     "5": {
         "content": [
-            "I am a neuroscientist from India, currently based in Germany. I completed my B.Tech in Biotechnology from IIT Roorkee in India before joining the MSc program in Integrative Neuroscience at OvGU, Magdeburg in Germany.",
-            "My MSc thesis project focuses on characterizing network oscillation dynamics in a GABA-deficient genetic mouse model, mainly employing in vitro electrophysiology to obtain extracellular recordings. I also work on building a computational model of the hippocampal CA1 subregion to further understand the elements of the oscillatory drive in the same mouse model."
+            "Hi! I am Sushmita Senapati, currently based in Germany, originally from India. I came here to pursue master's studies in neuroscience, and had completed my bachelor's in India before."
+        ]
+    },
+    "6": {
+        "content": [
+            "Hi! I am Sushmita Senapati, currently based in Germany, originally from India. I came here to pursue M.Sc. in neuroscience, and had completed my B.Tech. in India before. When not studying, I like to listen to music, paint a scenery or watch clouds float by."
+        ]
+    },
+    "7": {
+        "content": [
+            "Hi! I am Sushmita Senapati, currently based in Germany, originally from India. I came here to pursue M.Sc. in neuroscience, and had completed my B.Tech. in India before. My interests lie in the interface of systems and theoretical neuroscience. When not studying, I like to listen to music, paint a scenery or watch clouds float by."
+        ]
+    },
+    "8": {
+        "content": [
+            "Hi! I am Sushmita Senapati, currently based in Germany, originally from India. I came here to pursue M.Sc. in neuroscience, and had completed my B.Tech. in India before. My interests lie in the interface of systems and theoretical neuroscience. Professionally, I have experience with recording and analysing spontaneous and evoked population responses. When not studying, I like to listen to music, paint a scenery or watch clouds float by."
+        ]
+    },
+    "9": {
+        "content": [
+            "Hi! I am Sushmita Senapati, currently based in Germany, originally from India. I came here to pursue M.Sc. in neuroscience, and had completed my B.Tech. in India before. My interests lie in the interface of systems and theoretical neuroscience. Professionally, I have experience with recording and analysing spontaneous and evoked population responses. I've listed my skills below. When not studying, I like to listen to music, paint a scenery or watch clouds float by, as if it's some serious business!"
         ],
-        "cv": "data/CV_2026.pdf"
+        "skills": [
+            "Slice electrophysiology",
+            "Behavioral tracking",
+            "Machine learning",
+            "Data analysis",
+            "Computational modelling"
+        ]
+    },
+    "10": {
+        "content": [
+            "Hi! I am Sushmita Senapati, currently based in Germany, originally from India. I came here to pursue M.Sc. in neuroscience, and had completed my B.Tech. in India before. My interests lie in the interface of systems and theoretical neuroscience. Professionally, I have experience with recording and analysing spontaneous and evoked population responses. I've listed my skills, and, research experiences as a neuroscientist, below. When not studying, I like to listen to music, paint a scenery or watch clouds float by, as if it's some serious business!"
+        ],
+        "skills": [
+            "Slice electrophysiology",
+            "Behavioral tracking",
+            "Machine learning",
+            "Data analysis",
+            "Computational modelling"
+        ],
+        "research": [
+            "Analysed sharp-wave ripple (SWR) dynamics from spontanous population activity recorded in acute hippocampal network.",
+            "Developed minimal population firing-rate model for hippocampal CA1 circuit to obtain bistable states - representing SW and baseline activity.",
+            "Tracked mice poses and behavior using machine learning based open source tools.",
+            "Developed analysis pipeline for ECoG recordings of evoked neural activity from macaque auditory cortex."
+        ]
+    },
+    "11": {
+        "content": [
+            "Hi! I am Sushmita Senapati, currently based in Germany, originally from India. I came here to pursue M.Sc. in neuroscience, and had completed my B.Tech. in India before. My interests lie in the interface of systems and theoretical neuroscience. Professionally, I have experience with recording and analysing spontaneous and evoked population responses.  I've listed my skills, and, research experiences as a neuroscientist, below. You can also see my CV for more details. When not studying, I like to listen to music, paint a scenery or watch clouds float by, as if it's some serious business!"
+        ],
+        "cv": "data/CV_2026.pdf",
+        "skills": [
+            "Slice electrophysiology",
+            "Behavioral tracking",
+            "Machine learning",
+            "Data analysis",
+            "Computational modelling"
+        ],
+        "research": [
+            "Analysed sharp-wave ripple (SWR) dynamics from spontanous population activity recorded in acute hippocampal network.",
+            "Developed minimal population firing-rate model for hippocampal CA1 circuit to obtain bistable states - representing SW and baseline activity.",
+            "Tracked mice poses and behavior using machine learning based open source tools.",
+            "Developed analysis pipeline for ECoG recordings of evoked neural activity from macaque auditory cortex."
+        ]
     }
 }

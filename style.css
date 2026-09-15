@@ -14,11 +14,11 @@ body {
     flex-direction: column;
     align-items: center;
 
-    padding: 100px 0 50px;
+    padding: 100px 0 150px;
 }
 
 /* Main heading */
-h2 {
+h1 {
     width: 100%;
     max-width: 900px;
     color: lightcyan;
@@ -26,11 +26,15 @@ h2 {
     text-align: center;
 }
 
+#welcome {
+    transition: opacity 0.5s ease;
+}
+
 /* introduction */
 .introduction {
     width: 90%;
     max-width: 900px;
-    min-height: 450px;
+    min-height: 0;
 
     color: darkgray;
     font-family: 'Roboto', sans-serif;
@@ -58,11 +62,24 @@ a {
 
 /* bottom */
 .bottom-details {
-    width: 90%;
-    color: darkgray;
-    font-size: 10px;
-    margin-top: auto;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 8px;
+
     text-align: center;
+
+    background: rgba(17, 17, 17, 0.95);
+    color: darkgray;
+
+    z-index: 20;
 }
 
 
@@ -123,10 +140,22 @@ input:checked + .slider::before {
 
 /* Know me - slider */
 .about-slider {
-    width: 90%;
-    max-width: 900px;
-    margin-top: 30px;
-    font-size: 12px;
+    position: fixed;
+    bottom: 35px;
+    left: 0;
+
+    width: 100%;
+    max-width: none;
+
+    padding: 15px 10%;
+    box-sizing: border-box;
+
+    background: rgba(17, 17, 17, 0.95);
+    backdrop-filter: blur(8px);
+
+    text-align: center;
+
+    z-index: 20;
 }
 
 .about-slider h3 {
@@ -156,6 +185,134 @@ input:checked + .slider::before {
 }
 
 
+
+.extra-information {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-panel,
+.cv-panel {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 25px;
+
+    background: rgba(30,30,30,0.8);
+    border: 1px solid lightcyan;
+    border-radius: 12px;
+
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.5s ease,
+        max-height 0.5s ease,
+        transform 0.5s ease,
+        padding 0.5s ease;
+}
+
+
+/* visible panels */
+.info-panel.show,
+.cv-panel.show {
+    opacity: 1;
+    max-height: 500px;
+    transform: translate(0);
+}
+
+/* Panel headings */
+
+.info-panel h3 {
+    margin-top: 0;
+    color: lightcyan;
+}
+
+
+/* Panel lists */
+
+#skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#skills-list li {
+    color: darkgray;
+    border: 1px solid lightcyan;
+    border-radius: 20px;
+    padding: 6px 14px;
+    line-height: 1.4;
+}
+
+#research-list {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+#research-list li {
+    color: darkgray;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* CV */
+
+.cv-panel {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid lightcyan;
+    border-radius: 12px;
+
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.5s ease,
+        max-height 0.5s ease,
+        transform 0.5s ease,
+        padding 0.5s ease;
+}
+
+.cv-panel.show {
+    opacity: 1;
+    max-height: 100px;
+
+    transform: translateY(0);
+}
+
+.cv-panel a {
+    color: lightcyan;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cv-panel a:hover {
+    text-decoration: underline;
+}
+
+
+
 /* light mode */
 
 body.light-mode {
@@ -163,7 +320,7 @@ body.light-mode {
     color: #111111;
 }
 
-body.light-mode h2 {
+body.light-mode h1 {
     color: #164e63;
 }
 
@@ -196,29 +353,86 @@ body.light-mode .slider-labels {
     font-size: 12px;
 }
 
+body.light-mode .about-slider {
+    background-color: #f5f5f5;
+}
 
+body.light-mode .bottom-details {
+    background-color: #f5f5f5;
+    color: #111111;
+}
+
+
+body.light-mode .info-panel,
+body.light-mode .cv-panel {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: #164e63;
+}
+
+body.light-mode .info-panel h3 {
+    color: #164e63;
+}
+
+body.light-mode .info-panel li {
+    color: #444444;
+}
+
+body.light-mode #skills-list li {
+    border-color: #164e63;
+    color: #444444;
+}
+
+body.light-mode #research-list li {
+    color: #444444;
+}
+
+body.light-mode .cv-panel a {
+    color: #164e63;
+}
 
 
 /* Mobile view */
 @media (max-width: 600px) {
 
     body {
-        padding: 80px 0 50px;
+        padding: 80px 0 150px;
     }
 
-    h2 {
-        width: 100%;
+    h1 {
+        width: 90%;
         font-size: 20px;
     }
 
     .introduction {
         width: 90%;
-        min-height: 350px;
+        min-height: 0;
         font-size: 15px;
     }
 
     .personal-details {
         max-width: 100%;
+        line-height: 1.6;
+    }
+
+    .extra-information {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .info-panel,
+    .cv-panel {
+        padding: 20px;
+    }
+
+
+    /* skills */
+    #skills-list {
+        gap: 8px;
+    }
+
+    #skills-list li {
+        padding: 5px 10px;
+        font-size: 14px;
     }
 
     nav {
@@ -226,16 +440,25 @@ body.light-mode .slider-labels {
     }
 
     .about-slider {
-        width: 90%;
+        bottom: 35px;
+        padding: 12px 5%;
+    }
+
+    .about-slider h3 {
+        font-size: 16px;
+        margin: 5px 0 10px;
     }
 
     .bottom-details {
-        width: 90%;
+        height: 35px;
+        font-size: 11px;
+        padding: 8px 5px;
     }
 
     .theme-switch {
         top: 20px;
         right: 20px;
     }
+
     
 }
